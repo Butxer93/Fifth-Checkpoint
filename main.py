@@ -33,14 +33,10 @@ print(suma2(2,3,4)) # Resultado: 9
 nombre = 'Enrique'
 lista_nombre = ['Jessica', 'Paul', 'George', 'Henry', 'Adán']
 
-lista_nombre.index(nombre)
-
-'''
-# con for e in:
-
-for nom in lista_nombre:
-    if nom == nombre:
-        print(f'{nombre} existe en la lista, en la posición {lista_nombre.index(nom)}')
+for i in lista_nombre:
+    if i == nombre:
+        resultado = f'{nombre} existe en la lista, en la posición {lista_nombre.index(i)}'
+        break
     else:
-        print(f'{nombre} no existe en la lista')
-'''
+        resultado = f'{nombre} no existe en la lista'
+print(resultado)
